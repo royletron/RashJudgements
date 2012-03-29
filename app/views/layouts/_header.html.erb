@@ -1,0 +1,27 @@
+<header>
+	<div class="container">
+		<%= image_tag("rash_logo.jpg", :alt => "Sample App") %> 
+		<nav class="header_nav">
+			
+			<ul>
+				<li><%= link_to "Signup", root_path, :class => "signupButton" %></li> 
+				<li><%= link_to "Login", help_path, :class => "loginButton", :id => "loginButton" %></li> 
+				<script>
+					var loginLayer = $("#loginButton").layer({"content": "<form id=\"loginForm\" class=\"loginForm\" ><fieldset class=\"fulltext\"><label for=\"input_username\"><span>Username</span><input type=\"text\" required placeholder=\"your username\" size=\"30\" name=\"input_username\" id=\"input_username\"></label><label for=\"input_username\"><span>Password</span><input type=\"password\" required placeholder=\"your password\" size=\"30\" name=\"input_password\" id=\"input_password\"></label></fieldset><fieldset class=\"buttons\"><label for=\"option1\"><input type=\"checkbox\" id=\"option1\" value=\"1\" name=\"option\">Remember me?</label><a  class=\"textButton\">Login</a></fieldset><p style=\"margin-bottom:0\" class=\"loginExtra\"><a>Forgot password?</a></p></form>", 
+				    "event": "click",
+				      "closable": "button",});
+				</script>
+				
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<nav class="container">
+	<ul>
+		<li><%= link_to "Home", root_path, :class => 'image-button home-button' %></li> 
+		<li><%= link_to "Browse", root_path, :class => 'image-button browse-button' %></li>
+		<li><%= link_to "News", root_path, :class => 'image-button news-button' %></li> 
+	</ul> 
+	<hr style="width:400px">
+</nav>
