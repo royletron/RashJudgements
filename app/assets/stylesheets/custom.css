@@ -21,7 +21,7 @@
 }	
 .loginForm .buttons
 {
-	padding-top:4px;
+	padding-top:9px;
 }
 .loginForm .buttons input
 {
@@ -59,6 +59,17 @@ a.image-button:hover {
 a.image-button:active {
 	background-position: bottom;
 }
+.stripeline
+{
+	height:3px;
+	background-image:url('/assets/box_top.jpg');
+}
+.gravatar
+{
+	float:left;
+	background-color:white;
+	border:1px solid #eae6e6;
+}
 .browse-button{
 	width: 84px; height: 22px;
 	background-image: url('/assets/buttons/browse.png');
@@ -76,7 +87,7 @@ a.image-button:active {
 	clear:both;
 	background-image:url('/assets/box_top.jpg');
 	background-repeat:repeat-x;
-	margin-top:5px;
+	margin-top:15px;
 	padding-top:8px;
 }
 .fulltext input
@@ -122,7 +133,11 @@ a:visited {
 	background-image:url('/assets/bg_tile.jpg');
 	border:1px solid #cfcfcf;
 }
-.grey-box h1, p
+p
+{
+	color:black;
+}
+.grey-box h1, .grey-box p
 {
 	color:#9e8989;
 }

@@ -1,0 +1,13 @@
+<div class="grey-box" style="width:380px; margin-left:20px; float:right">
+	<div class="inner">
+		<p><%= @user.email %></p>
+	</div>
+</div>
+<div style="width:500px;">
+	<%= gravatar_image_tag @user.email, :class => 'gravatar', :gravatar => { :size => 65 } %><h1 style="float:left; padding-left:20px; padding-top:20px"><%= @user.name %></h1>
+	<div class="stripeline" style="width:500px; clear:both; margin-bottom:10px; top:-2px"></div>
+	<div style="padding-left:85px">
+		<p><strong>Email: </strong><%= @user.email %></p>
+	</div>
+</div>
+<div style="clear:both" />
