@@ -12,7 +12,7 @@
 {
 	width:280px;
 }
-.loginForm fieldset
+.loginForm fieldset, .fulltext
 {
 	border:0;
 	padding:0;
@@ -39,7 +39,7 @@
 	background-repeat:repeat-x;
 	padding-top:8px;
 }
-.loginForm label span
+.loginForm label span, .fulltext label
 {
 	float:none;
 	margin:0;
@@ -64,11 +64,15 @@ a.image-button:active {
 	height:3px;
 	background-image:url('/assets/box_top.jpg');
 }
+.stripe
+{
+	background-image:url('/assets/box_top.jpg');
+}
 .gravatar
 {
 	float:left;
 	background-color:white;
-	border:1px solid #eae6e6;
+	border:6px solid white;
 }
 .browse-button{
 	width: 84px; height: 22px;
@@ -90,9 +94,13 @@ a.image-button:active {
 	margin-top:15px;
 	padding-top:8px;
 }
-.fulltext input
+.smallwidth input
 {
 	width:270px;
+}
+.largewidth input
+{
+	width:400px;
 }
 body {
 	font-family:Arial;
@@ -307,7 +315,7 @@ td.sidebar {
 }
 /* form */
 div.field, div.actions {
-	margin-bottom: 10px; 
+	margin-bottom: 2px; 
 }
 /* errors */
 .field_with_errors {

@@ -1,16 +1,50 @@
-<h1>Sign up</h1>
-<%= form_for(@user) do |f| %> <div class="field">
-<%= f.label :name %><br />
-<%= f.text_field :name %> </div>
-<div class="field">
-<%= f.label :email %><br /> <%= f.text_field :email %>
+
+<div style="width:500px; float:right; margin-left:20px; ">
+	<div class="stripe" style="padding:5px">
+		<h1 style="float:left; margin-left:15px; margin-top:14px; padding:10px; background:white">Your Details</h1>
+		<div style="clear:both"></div>
+	</div>
+	<div style="padding-left:28px; padding-top:8px">
+		<%= form_for(@user) do |f| %> 
+		<fieldset class="fulltext largewidth" style="width:100%">
+			<%= render 'shared/error_messages', :object => f.object %>
+			<div class="field">
+				<%= f.label :name %><br />
+				<%= f.text_field :name, :placeholder => "Your name" %> 
+			</div>
+			<div class="field">
+				<%= f.label :email %><br /> 
+				<%= f.text_field :email, :placeholder => "Your email" %>
+			</div>
+			<div class="field">
+				<%= f.label :username %><br /> 
+				<%= f.text_field :username, :placeholder => "Your username" %>
+			</div>
+			<div class="field">
+				<%= f.label :password %><br />
+				<%= f.password_field :password, :placeholder => "Your password" %> 
+			</div>
+			<div class="field">
+			<%= f.label :password_confirmation, "Confirmation" %><br /> 
+			<%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
+			</div>
+			<div class="actions">
+				<%= f.submit "Sign up", :style => "width:120px" %> 
+			</div>
+		</fieldset>
+		<% end %>
+	</div>
 </div>
-<div class="field">
-<%= f.label :password %><br />
-<%= f.password_field :password %> </div>
-<div class="field">
-<%= f.label :password_confirmation, "Confirmation" %><br /> <%= f.password_field :password_confirmation %>
+<div class="grey-box" style="width:380px; float:right">
+	<div class="stripe" style="padding:5px">
+		<h1 style="float:left; margin-left:15px; margin-top:14px; padding:10px; background:white">Your Details</h1>
+		<div style="clear:both"></div>
+	</div>
+	<div class="inner">
+		<h1>Join us!</h1> 	
+		<p>
+			<strong>Like Bacon?</strong> Well fill in this bad boy!
+		</p>
+	</div>
 </div>
-<div class="actions">
-<%= f.submit "Sign up" %> </div>
-<% end %>
+<div style="clear:both" />
