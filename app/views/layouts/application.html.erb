@@ -5,10 +5,10 @@
 	<%= csrf_meta_tags %>
 	<%= render 'layouts/stylesheets' %>
 	<%= javascript_include_tag "application" %>
+	<%= yield :map %>
 </head>
 <body>
 	<div class="flashbar">
-		<a id="example">Hey</a>	
 		<% flash.each do |key, value| %>
 			<script>
 				var me = $("#example").modal({
